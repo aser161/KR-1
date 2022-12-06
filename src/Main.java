@@ -10,6 +10,8 @@ public class Main {
 
         bookOfEmployees[3] = new Employee("Васильев Семен Васильевич", 4, 33_000);
 
+        bookOfEmployees[4] = new Employee("Васильева Мария Васильевна", 2, 35_000);
+
         Employee.showListEmployees();
 
         System.out.println(Employee.countSumSalaries ());

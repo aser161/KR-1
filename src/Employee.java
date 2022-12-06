@@ -39,7 +39,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return fullName + " Отдел: " + department + " Зарплата: " + salary;
+        return fullName + " Отдел: " + department + " Зарплата: " + salary + " id: " + id;
     }
     public static void showListEmployees(){
         for (int i = 0; i < counter; i++) {
