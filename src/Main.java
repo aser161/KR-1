@@ -12,6 +12,8 @@ public class Main {
 
         bookOfEmployees[4] = new Employee("Васильева Мария Васильевна", 2, 35_000);
 
+        bookOfEmployees[5] = null;
+
         Employee.showListEmployees();
 
         System.out.println(Employee.countSumSalaries ());
