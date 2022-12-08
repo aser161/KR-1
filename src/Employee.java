@@ -1,5 +1,5 @@
 public class Employee {
-    private String fullName;
+     private String fullName;
     private int department;
     private int salary;
     private int id;
@@ -37,13 +37,16 @@ public class Employee {
         this.salary = salary;
     }
 
-    @Override
-    public String toString() {
-        return fullName + " Отдел: " + department + " Зарплата: " + salary;
+
+    public static String getEmployee(Employee employee) {
+        String stringEmployee = employee.getFullName() + " Отдел: " + employee.getDepartment() + " Зарплата: " + employee.getSalary() + " id: " + employee.getId();
+        return stringEmployee;
     }
     public static void showListEmployees(){
         for (int i = 0; i < counter; i++) {
-           System.out.println(Main.bookOfEmployees[i].toString());
+           if (Main.bookOfEmployees[i] != null) {
+               System.out.println(getEmployee(Main.bookOfEmployees[i]));
+           }
         }
     }
 
